@@ -1,0 +1,344 @@
+\documentclass{book}
+\usepackage{titlesec}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Vertebrate Biodiversity Lab- Lab Breakdown}}
+%\chead{ \fancyplain{}{}}
+\rhead{ \fancyplain{}{\today}}
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage}}
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\usepackage{arydshln} % dashed line in table
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                          % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+% No chapter names
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
+
+\usepackage{filecontents}% only so I can include the 'separate' chapters here for convenience (LaTeX writes new files with the given names on compilation which are then \input below)
+\begin{filecontents}{LabBreakdown.tex}
+  \documentclass[11pt, a4paper]{article}
+  \begin{document}
+
+
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{GTAs:} & Randy Klabacka: \href{mailto:rlk0015@auburn.edu}{rlk0015@auburn.edu} (702)882-6292 \\ & Morgan Muell: \href{mailto:mrm0161@auburn.edu}{mrm0161@auburn.edu} \\ \textbf{Sections:} & 1: Mon 12:00 -- 2:50 \\ & 2: Tue 12:30 -- 3:15 \\ & 3: Wed 12:00 -- 2:50
+\end{tabular}
+\end{minipage}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Grade Breakdown:}
+\begin{table}[h]
+\label{Table:GradeBreakdown}
+\begin{tabular}{lll}\hline
+Category                     & Points  \\ \hline
+Attendance \& Participation  & 20      \\
+Project Proposal             & 40      \\
+Field Notebook               & 40      \\
+Exams (20 pts each, 4 exams) & 80      \\ \hdashline
+Total                        & 240     \\ \hline
+\end{tabular}
+\end{table}
+
+\vskip.15in
+\noindent\textbf{Attendance \& Participation:} %\footnotemark
+\begin{itemize}
+\item{Participation: ~7 points per lab}
+\item{Each lab has a corresponding lab module on canvas with instructions on how to obtain points for that lab. Obtaining attendance/participation points for each lab is dependent on completion of the elements within each lab module.}
+\item{Each lab module will close at the beginning of the following lab (e.g., the Lab Module for Lab 2 will close once the Lab Module for Lab 3 opens). Lab modules open at the start of lab (i.e., 12:00 pm on Monday for Section 1) and end at the beginning of the following lab (e.g., 11:59 am on the following Monday for Section 1)}.
+\item{Failure to attend/participate in a lab results in a loss of all points for that lab.}
+\end{itemize} 
+
+\vskip.15in
+\noindent\textbf{Project Proposal:} %\footnotemark
+\begin{itemize}
+\item{Rough Draft: 15 points; Final Draft: 25 points}
+\item{Additional details for this assignment are on page XXXX}
+\end{itemize} 
+
+\vskip.15in
+\noindent\textbf{Field Notebook:} %\footnotemark
+\begin{itemize}
+\item{12 hours of in-field observation (including those from lab trips [4 trips: 8 hrs])}
+\item{4 points will be deducted for each hour a student is short of the 12 total hours}
+\item{Additional details for this assignment are on page XXXX}
+\end{itemize} 
+
+\vskip.15in
+\noindent\textbf{Exams:} %\footnotemark
+\begin{itemize}
+\item{Exams will be administered electronically over Canvas and will include:}
+\begin{enumerate}
+\item{Photo identification for focal taxa (common names acceptable)}
+\item{Natural history facts discussed in lab/field}
+\item{Major points from publications discussed in lab}
+\item{Phylogenies for focal taxa}
+\end{enumerate}
+\end{itemize} 
+
+
+\centering
+\begin{table}[h]
+\label{Table:Schedule}
+\caption{Lab Schedule}
+\begin{tabular}{llll}\hline
+Week of & Lab Module          & Topic                           & Items due before class  \\ \hline
+Aug 17  & Lab 1               & Live zoom overview              &                         \\
+Aug 24  & Lab 2               & Intro to Fishes                 &                         \\
+Aug 31  & Lab 3               & Field Trip- Euphapee Creek      & Discussion Template     \\
+Sep 7   & \textit{No Lab}     & \textit{Labor Day}              &                         \\
+Sep 14  & Lab 4               & Intro to Amphibians             & \textbf{Fish Exam}      \\
+Sep 21  & Lab 5               & How To Science                  & Proposal Ideas          \\
+Sep 28  & Lab 6               & Field Trip- Opacum Pond         & Canvas Discussion       \\
+Oct 5   & Lab 7               & Intro to Diapsids               & \textbf{Amphibian Exam} \\
+Oct 12  & Lab 8               & Proposal Workshop               & Proposal Rough Draft    \\
+Oct 19  & Lab 9               & Field Trip- Wood Duck Preserve  & Discussion Template     \\
+Oct 26  & Lab 10              & Intro to Mammals                & \textbf{Diapsid Exam}   \\
+Nov 2   & Lab 11              & Field Trip- Oxbow Pond          & Proposal Submission     \\
+Nov 9   & Lab 12              & Proposal Panels                 & Proposal Review         \\
+Nov 16  & \textit{No Lab}     & \textit{Final Exam Week}        & \textbf{Final Exam}     \\ \hline
+\end{tabular}
+\bigskip{}
+\end{table}
+
+
+\noindent\textbf{Academic Honesty and Inclusion:}
+\begin{itemize}
+\item{This lab welcomes, respects, and serves students of diverse backgrounds and perspectives, and it is expected that students respect one another. Any acts of aggression or misconduct based on race, color, religion, age, national origin, sex or sexual orientation, gender identity, or disability will not be tolerated.}
+\end{itemize} 
+
+  \end{document}
+\end{filecontents}
+
+
+% -------------------------------------------------------------------------------------
+
+\begin{filecontents}{ProjectProposal.tex}
+  \documentclass[11pt, a4paper]{article}
+  \usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Vertebrate Biodiversity Lab- Lab Breakdown} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\today} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\usepackage{arydshln} % dashed line in table
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                          % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+  \begin{document}
+
+
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{tabular}{llll}
+\textbf{Proposal Ideas:} & 3 pts (part of Lab 4 module) & \textbf{Due:} & Before Lab 6 \\
+\textbf{Rough Draft:} & 15 pts & \textbf{Due:} & Before Lab 8 \\
+\textbf{Final Draft:} & 25 pts & \textbf{Due:} & Before Lab 11 \\
+\textbf{Proposal Review:} & 7 pts & \textbf{Due:} & Before Lab 12 \\
+\textbf{Panel Discussion:} & 5 pts (part of Lab 12 module) & \textbf{Due:} & During Lab 12 \\
+
+
+\end{tabular}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+
+\vskip.15in
+\noindent{\large{\textbf{Project Proposal Overview:}}}\\ %\footnotemark
+All science begins with a question. Scientists take a question and design an experiment to find an answer. They then execute the experiment, analyze the results, and draw conclusions. However, there is an important step between the designing and the executing- getting money! Most projects require funding (for equipment, animals, reagents, people, etc.). In the United States, most science focused on vertebrate biodiversity is funded through research grants. A research grant is a sum of money awarded to a scientist to fund a proposed project. Most grants are awarded based on a written proposal. One such proposal that is relevant to your academic level is the Graduate Research Fellowship Program (GRFP), a fellowship funded by the United States National Science Foundation (NSF). This fellowship provides an annual student stipend of \$34,000 for three years in addition to a \$12,000 cost of education. Students can apply as an undergraduate and then once as a graduate student (in either their first or second year as a grad student). In other words, you get a ``freebee" chance as an undergrad that doesn't count against you! The application includes one 3-page personal statement and one 2-page research proposal. For this project, you will be writing a 2-page research proposal similar to that of the GRFP. Your project can include any sub-field of biology (e.g., biochemistry, evolution, ecology, behavior, etc.), but must be centered on vertebrate biodiversity (e.g.,no biomedical or agricultural projects). The most difficult part of this assignment might be coming up with a question, so it is best to start thinking about ideas early!
+
+\vskip.15in
+\noindent{\large{\textbf{Resources for Writing a Good Proposal:}}}\\ %\footnotemark
+\begin{itemize}
+\item{\url{https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=6201&org=DGE&from=home}}
+\item{\url{https://www.nsf.gov/ehr/Pubs/grfpoutreach2020.pdf}}
+\item{\url{http://www.malloryladd.com/nsf-grfp-advice.html}}
+\item{\url{https://www.alexhunterlang.com/nsf-fellowship}}
+\end{itemize} 
+
+\vskip.15in
+\noindent{\large{\textbf{Proposal Ideas Assignment:}}}\\ %\footnotemark
+You are required to prepare at least three proposal ideas by Lab 5. Each idea should consist of (1) a question, (2) a hypothesis, (3) a very basic experimental design [this can be a drawing], and (4) what kind of data you will collect. This assignment will be worth 3 points, and grading will be based on completion (i.e., as long as you turn something in thataddresses each point, you will get full credit). However, taking this assignment seriously will put you on the right track to designing a solid proposal. During the first few weeks of the semester, be thinking of possible projects. If you are struggling to come up with ideas, email one of your TA's and include your interests (e.g., ``I'm struggling to come up with a project proposal idea. I really like birds and am interested in animal behavior, could you provide me with some resources to help guide my thoughts?''). The points earned from this assignment will contribute to the Attendance \& Participation portion of the lab. You will turn this assignment in as part of the Lab 4 module.
+
+\vskip.15in
+\noindent{\large{\textbf{Rough Draft:}}}\\ %\footnotemark
+Your rough draft should address each point within the 1, but doesn't necessarily need to be written out in paragraph form (i.e., you can use bullet points). However, the grade for this assignment is not based on completion. It must be evident to the TA's that you have put a legitimate effort into the proposal.
+
+\vskip.15in
+\noindent{\large{\textbf{Final Draft:}}}\\ %\footnotemark
+Your final draft should address each point within the ??, and should be written in para-
+graph form according to the GRFP guidelines (Paragraphs: Single-spaced; Font: 12-pt Times New Roman; Margins: 1"). Your grade will be based on how well you address each point in the rubric in addition to how you responded to the comments made on your rough draft.
+
+\vskip.15in
+\noindent{\large{\textbf{Proposal Review and Panel Discussion:}}}\\ %\footnotemark
+After everyone has submitted their project proposal Final draft, each student will be as- signed to a proposal panel to decide on a proposal to ``fund'' (to make things fun, ``funding'' will be 3 substitution points for the project proposal). Each student will be assigned a proposal to review. You need to review in-detail the proposal assigned to you, but you are also required to read all proposals assigned to your panel in order to assess the strength of your proposal relative to the rest in your panel. Part of your Lab 11 module will be to submit your proposal review. The review should be based on the following criteria: (1) Is background information informative? (2) Is the hypothesis clear and testable? (3) Is the experimental design clear? (4) Are the methods appropriate? (5) Do the predictions make sense? (6) Does the project merit funding? [e.g., Is the question important, and will project results positive OR negative push forward scientific understanding?] (7) Is the project feasible? Lastly, you should rank your proposal within one of the following groups: ``Excellent'', ``Good'', ``Fair'', or ``Poor''. This review will be turned in as part of your Lab 11 module. The Lab 12 module will include a live zoom meeting with your panel during lab time, wherein you will discuss each proposal and decide (over vote) which proposal merits funding.
+
+
+\centering
+\begin{table}[h]
+\label{Table:Schedule}
+\caption{Lab Schedule}
+\begin{tabular}{ll}\hline
+\Large{\textit{Introduction}} 										& 3 pts 	\\
+\quad{Is background information relevant and clear?}				& 1 pt 		\\
+\quad{Are supporting claims cited with peer-reviewed literature?}	& 1pt 		\\
+\quad{What specific question is being asked?}						& 1 pt 		\\
+\quad{\Large{\textit{Objective}}}									& 3 pts 	\\
+\quad{Is the hypothesis clearly defined?}							& 1 pt 		\\
+\quad{Is the study system appropriate to address the hypothesis?}	& 1 pt 		\\
+\quad{\Large{\textit{Methods}}}										& 3 pts 	\\
+\quad{Figure for experimental design.}								& 1 pt 		\\
+\quad{Is the experimental design clearly described?}				& 1 pt 		\\
+\quad{What are the independent and dependent variables?}			& 1 pt 		\\
+\quad{Are methods sound and logical to address the hypothesis?}		& 1 pt 		\\
+\quad{Are previously implemented methods cited?}					& 1 pt 		\\
+\quad{Are obvious pitfalls evident?}								& 1 pt 		\\
+\quad{What data will you collect?}									& 1 pt 		\\
+\quad{What tools/equipment will you need to collect data?}			& 1 pt 		\\
+\quad{\Large{\textit{Predictions}}}									& 3 pts 	\\
+\quad{Figure for anticipated results.}								& 1 pt 		\\
+\quad{What results would support your hypothesis?}					& 1 pt 		\\
+\quad{What results would refute your hypothesis?}					& 1 pt 		\\
+\quad{\Large{\textit{Intellectual Merit}}}							& 3 pts 	\\
+\quad{What is the significance of the project?}						& 1 pt 		\\
+\Large{\textbf{Introduction}} 										& 17 pts 	\\
+
+\end{tabular}
+\bigskip{}
+\end{table}
+
+
+\noindent\textbf{Academic Honesty and Inclusion:}
+\begin{itemize}
+\item{This lab welcomes, respects, and serves students of diverse backgrounds and perspectives, and it is expected that students respect one another. Any acts of aggression or misconduct based on race, color, religion, age, national origin, sex or sexual orientation, gender identity, or disability will not be tolerated.}
+\end{itemize} 
+
+  \end{document}
+\end{filecontents}
+\usepackage{kantlipsum}% only to provide filler text for the example
+\usepackage{docmute}
+\title{Thesis}
+\author{You}
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter{Lab Breakdown}
+\input{LabBreakdown.tex}% preamble will be ignored
+\chapter{ProjectProposal}
+\input{ProjectProposal.tex}% preamble will be ignored
+\end{document}
