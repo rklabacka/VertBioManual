@@ -1,2 +1,0 @@
-\contentsline {chapter}{\numberline {1}Lab Breakdown}{5}{chapter.1}
-\contentsline {chapter}{\numberline {2}ProjectProposal}{7}{chapter.2}
