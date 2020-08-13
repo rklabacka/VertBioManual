@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  13 AUG 2020 04:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  13 AUG 2020 04:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,12 +764,33 @@ less on input line 76.
 
 [6
 
-] [7]
+]
+
+Package caption Warning: \label without proper reference on input line 139.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `Rough Draft Rubric' on page 7 undefined on input line
+ 124.
+
+[7]
+
+Package caption Warning: \label without proper reference on input line 175.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `Final Draft Rubric' on page 8 undefined on input line
+ 128.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `Optional Research Project Rubric' on page 8 undefined
+ on input line 207.
 
 [8]
 
@@ -795,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
  []
 
 [14]
-<FieldNoteExample.jpg, id=154, 752.8125pt x 1003.75pt>
+<FieldNoteExample.jpg, id=156, 752.8125pt x 1003.75pt>
 File: FieldNoteExample.jpg Graphic file (type jpg)
 <use FieldNoteExample.jpg>
 Package pdftex.def Info: FieldNoteExample.jpg  used on input line 149.
@@ -807,7 +828,7 @@ Chapter 4.
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 51.
 
-<Vertebrata_fishes_tre.pdf, id=161, 1247.62106pt x 815.79279pt>
+<Vertebrata_fishes_tre.pdf, id=163, 1247.62106pt x 815.79279pt>
 File: Vertebrata_fishes_tre.pdf Graphic file (type pdf)
 <use Vertebrata_fishes_tre.pdf>
 Package pdftex.def Info: Vertebrata_fishes_tre.pdf  used on input line 57.
@@ -817,7 +838,7 @@ Overfull \hbox (27.00835pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
-<FishAnatomy.pdf, id=162, 462.57317pt x 321.90865pt>
+<FishAnatomy.pdf, id=164, 462.57317pt x 321.90865pt>
 File: FishAnatomy.pdf Graphic file (type pdf)
 <use FishAnatomy.pdf>
 Package pdftex.def Info: FishAnatomy.pdf  used on input line 76.
@@ -827,7 +848,7 @@ Package pdftex.def Info: FishAnatomy.pdf  used on input line 76.
  <./Vertebrata_fishes_tre.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 81.
-<Chondrichthys_tre.pdf, id=183, 1322.75185pt x 364.34618pt>
+<Chondrichthys_tre.pdf, id=185, 1322.75185pt x 364.34618pt>
 File: Chondrichthys_tre.pdf Graphic file (type pdf)
 <use Chondrichthys_tre.pdf>
 Package pdftex.def Info: Chondrichthys_tre.pdf  used on input line 92.
@@ -838,7 +859,7 @@ Overfull \hbox (57.06013pt too wide) in paragraph at lines 92--93
  []
 
 [17 <./FishAnatomy.pdf>]
-<Actinopterygii_tre.pdf, id=215, 1297.90903pt x 717.41022pt>
+<Actinopterygii_tre.pdf, id=217, 1297.90903pt x 717.41022pt>
 File: Actinopterygii_tre.pdf Graphic file (type pdf)
 <use Actinopterygii_tre.pdf>
 Package pdftex.def Info: Actinopterygii_tre.pdf  used on input line 111.
@@ -856,7 +877,7 @@ Chapter 5.
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 51.
 
-<Vertebrata_amphib_tre.pdf, id=274, 1247.62106pt x 815.79279pt>
+<Vertebrata_amphib_tre.pdf, id=276, 1247.62106pt x 815.79279pt>
 File: Vertebrata_amphib_tre.pdf Graphic file (type pdf)
 <use Vertebrata_amphib_tre.pdf>
 Package pdftex.def Info: Vertebrata_amphib_tre.pdf  used on input line 56.
@@ -866,7 +887,7 @@ Overfull \hbox (27.00835pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
-<Amphibia_tre.pdf, id=275, 923.68188pt x 445.93904pt>
+<Amphibia_tre.pdf, id=277, 923.68188pt x 445.93904pt>
 File: Amphibia_tre.pdf Graphic file (type pdf)
 <use Amphibia_tre.pdf>
 Package pdftex.def Info: Amphibia_tre.pdf  used on input line 63.
@@ -874,13 +895,13 @@ Package pdftex.def Info: Amphibia_tre.pdf  used on input line 63.
 [23
 
  <./Vertebrata_amphib_tre.pdf>]
-<AmphibianAnatomy.pdf, id=297, 462.57317pt x 321.90865pt>
+<AmphibianAnatomy.pdf, id=299, 462.57317pt x 321.90865pt>
 File: AmphibianAnatomy.pdf Graphic file (type pdf)
 <use AmphibianAnatomy.pdf>
 Package pdftex.def Info: AmphibianAnatomy.pdf  used on input line 70.
 (pdftex.def)             Requested size: 462.57202pt x 321.90785pt.
  [24 <./Amphibia_tre.pdf> <./AmphibianAnatomy.pdf>]
-<Caudata_tre.pdf, id=345, 1269.37236pt x 834.87108pt>
+<Caudata_tre.pdf, id=347, 1269.37236pt x 834.87108pt>
 File: Caudata_tre.pdf Graphic file (type pdf)
 <use Caudata_tre.pdf>
 Package pdftex.def Info: Caudata_tre.pdf  used on input line 82.
@@ -891,7 +912,7 @@ Overfull \hbox (35.70871pt too wide) in paragraph at lines 82--83
  []
 
 [25 <./Caudata_tre.pdf>] [26]
-<Anura_tre.pdf, id=375, 1029.02448pt x 777.16446pt>
+<Anura_tre.pdf, id=377, 1029.02448pt x 777.16446pt>
 File: Anura_tre.pdf Graphic file (type pdf)
 <use Anura_tre.pdf>
 Package pdftex.def Info: Anura_tre.pdf  used on input line 127.
@@ -903,12 +924,12 @@ Chapter 6.
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 51.
 
-<Amniota_tre.pdf, id=410, 1077.0338pt x 768.8725pt>
+<Amniota_tre.pdf, id=412, 1077.0338pt x 768.8725pt>
 File: Amniota_tre.pdf Graphic file (type pdf)
 <use Amniota_tre.pdf>
 Package pdftex.def Info: Amniota_tre.pdf  used on input line 56.
 (pdftex.def)             Requested size: 430.8059pt x 307.54355pt.
-<DiapsidAnatomy.pdf, id=411, 476.4209pt x 335.02766pt>
+<DiapsidAnatomy.pdf, id=413, 476.4209pt x 335.02766pt>
 File: DiapsidAnatomy.pdf Graphic file (type pdf)
 <use DiapsidAnatomy.pdf>
 Package pdftex.def Info: DiapsidAnatomy.pdf  used on input line 63.
@@ -921,7 +942,7 @@ Overfull \hbox (4.38849pt too wide) in paragraph at lines 63--64
 [30
 
  <./Amniota_tre.pdf>]
-<Lepidosauria_tre.pdf, id=482, 1256.33366pt x 769.05917pt>
+<Lepidosauria_tre.pdf, id=484, 1256.33366pt x 769.05917pt>
 File: Lepidosauria_tre.pdf Graphic file (type pdf)
 <use Lepidosauria_tre.pdf>
 Package pdftex.def Info: Lepidosauria_tre.pdf  used on input line 73.
@@ -932,18 +953,18 @@ Overfull \hbox (30.49333pt too wide) in paragraph at lines 73--74
  []
 
 [31 <./DiapsidAnatomy.pdf>] [32 <./Lepidosauria_tre.pdf>] [33] [34]
-<Archelosauria_tre.pdf, id=629, 937.2877pt x 359.28026pt>
+<Archelosauria_tre.pdf, id=631, 937.2877pt x 359.28026pt>
 File: Archelosauria_tre.pdf Graphic file (type pdf)
 <use Archelosauria_tre.pdf>
 Package pdftex.def Info: Archelosauria_tre.pdf  used on input line 137.
 (pdftex.def)             Requested size: 281.18848pt x 107.7849pt.
-<Testudines_tre.pdf, id=630, 1003.45992pt x 743.77875pt>
+<Testudines_tre.pdf, id=632, 1003.45992pt x 743.77875pt>
 File: Testudines_tre.pdf Graphic file (type pdf)
 <use Testudines_tre.pdf>
 Package pdftex.def Info: Testudines_tre.pdf  used on input line 154.
 (pdftex.def)             Requested size: 401.37686pt x 297.50623pt.
  [35 <./Archelosauria_tre.pdf>] [36 <./Testudines_tre.pdf>]
-<Aves_tre.pdf, id=749, 995.70493pt x 760.3617pt>
+<Aves_tre.pdf, id=751, 995.70493pt x 760.3617pt>
 File: Aves_tre.pdf Graphic file (type pdf)
 <use Aves_tre.pdf>
 Package pdftex.def Info: Aves_tre.pdf  used on input line 196.
@@ -956,12 +977,12 @@ Chapter 7.
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 51.
 
-<Mammalia_tre.pdf, id=870, 1016.63818pt x 759.95717pt>
+<Mammalia_tre.pdf, id=872, 1016.63818pt x 759.95717pt>
 File: Mammalia_tre.pdf Graphic file (type pdf)
 <use Mammalia_tre.pdf>
 Package pdftex.def Info: Mammalia_tre.pdf  used on input line 56.
 (pdftex.def)             Requested size: 406.64807pt x 303.97748pt.
-<MammalAnatomy.pdf, id=871, 363.22198pt x 630.98137pt>
+<MammalAnatomy.pdf, id=873, 363.22198pt x 630.98137pt>
 File: MammalAnatomy.pdf Graphic file (type pdf)
 <use MammalAnatomy.pdf>
 Package pdftex.def Info: MammalAnatomy.pdf  used on input line 63.
@@ -988,15 +1009,18 @@ Package rerunfilecheck Info: File `LabManual.out' has not changed.
 (rerunfilecheck)             Checksum: 68E704722F3AB1A2A407D4495532F1E7;337.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 10755 strings out of 492649
- 162550 string characters out of 6129622
- 287083 words of memory out of 5000000
- 14365 multiletter control sequences out of 15000+600000
+ 10756 strings out of 492649
+ 162584 string characters out of 6129622
+ 286083 words of memory out of 5000000
+ 14366 multiletter control sequences out of 15000+600000
  10037 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,12n,43p,1735b,610s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1012,10 +1036,10 @@ ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loc
 al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loca
 l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on LabManual.pdf (49 pages, 19252506 bytes).
+Output written on LabManual.pdf (49 pages, 19252856 bytes).
 PDF statistics:
- 1116 PDF objects out of 1200 (max. 8388607)
- 595 compressed objects within 6 object streams
+ 1118 PDF objects out of 1200 (max. 8388607)
+ 597 compressed objects within 6 object streams
  85 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
