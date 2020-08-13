@@ -3,3 +3,5 @@
 \contentsline {chapter}{\numberline {3}\relax \fontsize {24.88}{30}\selectfont {Field Notebook}}{13}{chapter.3}
 \contentsline {chapter}{\numberline {4}\relax \fontsize {24.88}{30}\selectfont {``Fishes''}}{16}{chapter.4}
 \contentsline {chapter}{\numberline {5}\relax \fontsize {24.88}{30}\selectfont {Amphibians}}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6}\relax \fontsize {24.88}{30}\selectfont {Diapsids}}{30}{chapter.6}
+\contentsline {chapter}{\numberline {7}\relax \fontsize {24.88}{30}\selectfont {Mammals}}{43}{chapter.7}
